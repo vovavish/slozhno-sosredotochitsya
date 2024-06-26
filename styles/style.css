@@ -47,6 +47,7 @@
 }
 
 .header__hidden_incription {
+  display: var(--display);
   color: var(--accent-color);
   font-family: var(--main-font-family);
   font-weight: normal;
