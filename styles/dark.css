@@ -10,10 +10,30 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   background-image: url(../images/cover-image-dark.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   --accent-color: #ff0070;
   --text-color: #f1b2ce;
   --accent-text-color: #000028;
   --accent-header-color: #db00ff;
 
   --main-font-family: 'IBM Plex mono', sans-serif;
+  --display: visible;
+  --bg-color: #000028;
+  --button-color: #ff0070;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #ff0070;
+    --text-color: #f1b2ce;
+    --accent-text-color: #000028;
+    --accent-header-color: #db00ff;
+  
+    --main-font-family: 'IBM Plex mono', sans-serif;
+    --display: visible;
+    --bg-color: #000028;
+    --button-color: #ff0070;
+  }
 }

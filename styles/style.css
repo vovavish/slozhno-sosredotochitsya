@@ -3,6 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: url(../images/cover-image-dark.png);
+  background-color: var(--bg-color);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -88,7 +89,7 @@
 .header__theme-menu-button {
   border: none;
   padding: 1.5px 13px;
-  color: var(--accent-color);
+  color: var(--button-color);
   font-family: var(--main-font-family);
   font-weight: normal;
   font-size: 18px;
@@ -96,18 +97,18 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--button-color);
   cursor: pointer;
 }
 
 .header__theme-menu-button:focus-visible {
   margin-block-end: -1px;
-  border-block-end: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--button-color);
   outline: none;
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--button-color);
   pointer-events: none;
 }
 

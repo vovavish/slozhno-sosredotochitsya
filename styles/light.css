@@ -10,6 +10,9 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   background-image: url(../images/cover-image-light.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   --accent-color: #ff8dcb;
   --text-color: #353430;
   --accent-text-color: #353430;
@@ -18,6 +21,8 @@
 
   --main-font-family: 'IBM Plex mono', sans-serif;
   --display: none;
+  --bg-color: #ffc2e6;
+  --button-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -30,10 +35,15 @@
   
     --main-font-family: 'IBM Plex mono', sans-serif;
     --display: none;
+    --bg-color: #ffc2e6;
+    --button-color: #353430;
   }
   
   .page.theme_auto {
     background-image: url(../images/cover-image-light.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   .page.theme_auto .decorated-zone::before {
@@ -50,25 +60,6 @@
     text-shadow: 4px 4px 0 var(--accent-header-color-shadow);
   }
 
-  .page.theme_auto .header__theme-menu-button {
-    color: var(--text-color);
-  }
-  
-  .page.theme_auto .header__theme-menu-button:hover {
-    cursor: pointer;
-    outline: 1px solid var(--text-color);
-  }
-  
-  .page.theme_auto .header__theme-menu-button:focus-visible {
-    outline: none;
-    border-block-end: 1px solid var(--text-color);
-    margin-block-end: -1px;
-  }
-  
-  .page.theme_auto .header__theme-menu-button_active {
-    pointer-events: none;
-    outline: 1px solid var(--text-color);
-  }
   
   .page.theme_auto .main__thematic-block_header {
     color: var(--text-color);
@@ -87,26 +78,6 @@
 
 .page.theme_light .header__title {
   text-shadow: 4px 4px 0 var(--accent-header-color-shadow);
-}
-
-.page.theme_light .header__theme-menu-button {
-  color: var(--text-color);
-}
-
-.page.theme_light .header__theme-menu-button:hover {
-  cursor: pointer;
-  outline: 1px solid var(--text-color);
-}
-
-.page.theme_light .header__theme-menu-button:focus-visible {
-  outline: none;
-  border-block-end: 1px solid var(--text-color);
-  margin-block-end: -1px;
-}
-
-.page.theme_light .header__theme-menu-button_active {
-  pointer-events: none;
-  outline: 1px solid var(--text-color);
 }
 
 .page.theme_light .main__thematic-block_header {
