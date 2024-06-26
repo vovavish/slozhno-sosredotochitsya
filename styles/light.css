@@ -62,3 +62,7 @@
 .page.theme_light .header__hidden_incription {
   display: none;
 }
+
+.page.theme_light .main__thematic-block_header {
+  color: var(--text-color);
+}
