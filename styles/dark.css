@@ -22,6 +22,7 @@
   --display: visible;
   --bg-color: #000028;
   --button-color: #ff0070;
+  --bg-image: url(../images/cover-image-dark.png);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,7 +34,8 @@
   
     --main-font-family: 'IBM Plex mono', sans-serif;
     --display: visible;
-    --bg-color: #000028;
+    --bg-color: #fff1f7;
     --button-color: #ff0070;
+    --bg-image: url(../images/cover-image-dark.png);
   }
 }

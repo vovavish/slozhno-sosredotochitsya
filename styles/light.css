@@ -21,8 +21,9 @@
 
   --main-font-family: 'IBM Plex mono', sans-serif;
   --display: none;
-  --bg-color: #ffc2e6;
+  --bg-color: #fff1f7;
   --button-color: #353430;
+  --bg-image: url(../images/cover-image-light.png);
 }
 
 @media (prefers-color-scheme: light) {
@@ -35,15 +36,9 @@
   
     --main-font-family: 'IBM Plex mono', sans-serif;
     --display: none;
-    --bg-color: #ffc2e6;
+    --bg-color: #fff1f7;
     --button-color: #353430;
-  }
-  
-  .page.theme_auto {
-    background-image: url(../images/cover-image-light.png);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    --bg-image: url(../images/cover-image-light.png);
   }
 
   .page.theme_auto .decorated-zone::before {
