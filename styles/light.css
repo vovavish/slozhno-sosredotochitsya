@@ -27,6 +27,48 @@
   
     --main-font-family: 'IBM Plex mono', sans-serif;
   }
+  
+  .page.theme_auto {
+    background-image: url(../images/cover-image-light.png);
+  }
+
+  .page.theme_auto .decorated-zone::before {
+    border-top: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+  }
+  
+  .page.theme_auto .decorated-zone::after {
+    border-bottom: 1px solid var(--text-color);
+    border-left: 1px solid var(--text-color);
+  }
+  
+  .page.theme_auto .header__theme-menu-button {
+    color: var(--text-color);
+  }
+  
+  .page.theme_auto .header__theme-menu-button:hover {
+    cursor: pointer;
+    outline: 1px solid var(--text-color);
+  }
+  
+  .page.theme_auto .header__theme-menu-button:focus-visible {
+    outline: none;
+    border-block-end: 1px solid var(--text-color);
+    margin-block-end: -1px;
+  }
+  
+  .page.theme_auto .header__theme-menu-button_active {
+    pointer-events: none;
+    outline: 1px solid var(--text-color);
+  }
+  
+  .page.theme_auto .header__hidden_incription {
+    display: none;
+  }
+  
+  .page.theme_auto .main__thematic-block_header {
+    color: var(--text-color);
+  }
 }
 
 .page.theme_light .decorated-zone::before {
