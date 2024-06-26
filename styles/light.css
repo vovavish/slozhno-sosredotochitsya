@@ -14,6 +14,7 @@
   --text-color: #353430;
   --accent-text-color: #353430;
   --accent-header-color: #ffc2e6;
+  --accent-header-color-shadow: #ff0070;
 
   --main-font-family: 'IBM Plex mono', sans-serif;
 }
@@ -26,6 +27,7 @@
     --accent-header-color: #ffc2e6;
   
     --main-font-family: 'IBM Plex mono', sans-serif;
+    --accent-header-color-shadow: #ff0070;
   }
   
   .page.theme_auto {
@@ -42,6 +44,10 @@
     border-left: 1px solid var(--text-color);
   }
   
+  .page.theme_auto .header__title {
+    text-shadow: 4px 4px 0 var(--accent-header-color-shadow);
+  }
+
   .page.theme_auto .header__theme-menu-button {
     color: var(--text-color);
   }
@@ -81,6 +87,10 @@
   border-left: 1px solid var(--text-color);
 }
 
+.page.theme_light .header__title {
+  text-shadow: 4px 4px 0 var(--accent-header-color-shadow);
+}
+
 .page.theme_light .header__theme-menu-button {
   color: var(--text-color);
 }
@@ -107,4 +117,8 @@
 
 .page.theme_light .main__thematic-block_header {
   color: var(--text-color);
+}
+
+.page.theme_light .footer__title {
+  text-shadow: 2px 2px 0 var(--accent-header-color-shadow);
 }
